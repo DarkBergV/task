@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-client = MongoClient("mongodb://127.0.0.1:27017")
+client = MongoClient("mongodb://localhost:27017")
 db = client["users"]
 collection = db["users"]
 

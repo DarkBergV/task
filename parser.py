@@ -13,7 +13,7 @@ with open("users.json", "w") as json_file:
     json.dump(data, json_file, indent=4)
 
 
-client = MongoClient("mongodb://127.0.0.1:27017")
+client = MongoClient("mongodb://localhost:27017")
 db = client["users"]
 collection = db["users"]
 
